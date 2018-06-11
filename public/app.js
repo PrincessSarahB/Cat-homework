@@ -65,7 +65,8 @@ const createFavouriteFood = function(food){
 const createImage = function(image){
   var imgLi = document.createElement('li');
   var img = document.createElement('img');
-  img.innerHTML = "<img src=\"" + image + "\"/>";
+  img.setAttribute('src', image);
+  img.setAttribute('width', '500')
   return img;
 };
 
